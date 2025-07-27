@@ -106,18 +106,6 @@
       "path": "~/PD"
     },
     {
-      "name": "PublicCmds",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "public_cmds",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/command/PublicCmdsCommand.java"
-        ]
-      }
-    },
-    {
       "name": "PDDeatb",
       "type": "procedure",
       "compiles": true,
