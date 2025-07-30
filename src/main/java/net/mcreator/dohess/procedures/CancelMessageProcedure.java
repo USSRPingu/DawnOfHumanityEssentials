@@ -32,17 +32,17 @@ public class CancelMessageProcedure {
 		if (entity == null || text == null)
 			return;
 		if (DohessModVariables.WorldVariables.get(world).PD == 1) {
+			if (event != null && event.isCancelable()) {
+				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
+			}
 			{
 				String _setval = text;
 				entity.getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.PlayerMessage = _setval;
 					capability.syncPlayerVariables(entity);
 				});
-			}
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
 			}
 			{
 				final Vector3d _center = new Vector3d((entity.getPosX()), (entity.getPosY()), (entity.getPosZ()));

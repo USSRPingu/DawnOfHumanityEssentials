@@ -35,7 +35,7 @@ public class ItemHandcuffsItem extends Item {
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 		ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
-		ApplyHandcuffsProcedure.execute(world, entity);
+		ApplyHandcuffsProcedure.execute(world, entity.getPosX(), entity.getPosY(), entity.getPosZ(), entity);
 		return ar;
 	}
 }

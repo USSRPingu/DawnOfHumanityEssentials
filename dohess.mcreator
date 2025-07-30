@@ -191,29 +191,13 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/DOHTimers"
-    },
-    {
-      "name": "TimerDown",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "timer_down",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/TimerDownProcedure.java"
-        ],
-        "dependencies": [
+          },
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
-      },
-      "path": "~/DOHTimers"
+      }
     },
     {
       "name": "SetBossbar",
@@ -927,6 +911,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -969,6 +965,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -989,38 +997,732 @@
         ]
       },
       "path": "~/Knife"
+    },
+    {
+      "name": "VisableName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visable_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/VisableNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members"
+    },
+    {
+      "name": "RemoveRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RemoveRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "RemoveSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RemoveSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "SetCustomRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCustomRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "SetCustomSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCustomSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "SetCadet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_cadet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCadetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "Aqua",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aqua",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/AquaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Black",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/BlackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Blue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/BlueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "DarkBlue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkBlueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Darkaqau",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkaqau",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkaqauProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Darkgray",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkgray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkgrayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Darkgreen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkgreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkgreenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "DarkPurple",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_purple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkPurpleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "DarkRed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DarkRedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "ColourGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colour_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ColourGoldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Gray",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GrayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Green",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GreenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Lightpurple",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightpurple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/LightpurpleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Red",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "Yellow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/YellowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "White",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/WhiteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/NameColour"
+    },
+    {
+      "name": "SetBossbarBlue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarBlueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarGreen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarGreenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarPink",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_pink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarPinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarPurple",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_purple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarPurpleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarRed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarRedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarWhite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_white",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarWhiteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarYellow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarYellowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "SetBossbarName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_bossbar_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetBossbarNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Bossbar"
+    },
+    {
+      "name": "TimerDown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TimerDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
-      "name": "DOHTimer",
-      "type": "number",
+      "name": "AbleWalk",
+      "type": "logic",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "true"
     },
     {
-      "name": "PD",
-      "type": "number",
-      "scope": "world",
-      "value": "0.0"
-    },
-    {
-      "name": "SetPDX",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "SetPDY",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "SetPDZ",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
+      "name": "handcuffed",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     },
     {
       "name": "MPSquad1",
@@ -1071,6 +1773,18 @@
       "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
     },
     {
+      "name": "PD",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "PlayerMessage",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
       "name": "PlayerRank",
       "type": "string",
       "scope": "player_persistent",
@@ -1087,6 +1801,102 @@
       "type": "string",
       "scope": "player_persistent",
       "value": ""
+    },
+    {
+      "name": "Rank1",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank10",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank11",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank12",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank13",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank14",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank15",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank16",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank2",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank3",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank4",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank5",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank6",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank7",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank8",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+    },
+    {
+      "name": "Rank9",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
     },
     {
       "name": "SGSquad1",
@@ -1185,112 +1995,64 @@
       "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
     },
     {
-      "name": "Rank1",
+      "name": "Timer1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Timer2",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "Timer3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Timer4",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "Timer5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "TimerName1",
       "type": "string",
       "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
     },
     {
-      "name": "Rank2",
+      "name": "TimerName2",
       "type": "string",
       "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
     },
     {
-      "name": "Rank3",
+      "name": "TimerName3",
       "type": "string",
       "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
     },
     {
-      "name": "Rank4",
+      "name": "TimerName4",
       "type": "string",
       "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
+      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
     },
     {
-      "name": "Rank5",
+      "name": "TimerName5",
       "type": "string",
       "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank6",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank7",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank8",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank9",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank10",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank11",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank12",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank13",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank14",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank15",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "Rank16",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
-    },
-    {
-      "name": "PlayerMessage",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
-    },
-    {
-      "name": "handcuffed",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
+      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
     }
   ],
   "sound_elements": [],
@@ -1414,12 +2176,12 @@
           {
             "name": "Squad And Rank",
             "children": []
+          },
+          {
+            "name": "NameColour",
+            "children": []
           }
         ]
-      },
-      {
-        "name": "DOHTimers",
-        "children": []
       },
       {
         "name": "Debug",
