@@ -142,11 +142,6 @@ public class DohessModVariables {
 		public String SLSquad6 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad7 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad8 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public double Timer1 = 0;
-		public double Timer2 = 0.0;
-		public double Timer3 = 0;
-		public double Timer4 = 0.0;
-		public double Timer5 = 0;
 		public String TimerName1 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
 		public String TimerName2 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
 		public String TimerName3 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
@@ -204,11 +199,6 @@ public class DohessModVariables {
 			SLSquad6 = nbt.getString("SLSquad6");
 			SLSquad7 = nbt.getString("SLSquad7");
 			SLSquad8 = nbt.getString("SLSquad8");
-			Timer1 = nbt.getDouble("Timer1");
-			Timer2 = nbt.getDouble("Timer2");
-			Timer3 = nbt.getDouble("Timer3");
-			Timer4 = nbt.getDouble("Timer4");
-			Timer5 = nbt.getDouble("Timer5");
 			TimerName1 = nbt.getString("TimerName1");
 			TimerName2 = nbt.getString("TimerName2");
 			TimerName3 = nbt.getString("TimerName3");
@@ -259,11 +249,6 @@ public class DohessModVariables {
 			nbt.putString("SLSquad6", SLSquad6);
 			nbt.putString("SLSquad7", SLSquad7);
 			nbt.putString("SLSquad8", SLSquad8);
-			nbt.putDouble("Timer1", Timer1);
-			nbt.putDouble("Timer2", Timer2);
-			nbt.putDouble("Timer3", Timer3);
-			nbt.putDouble("Timer4", Timer4);
-			nbt.putDouble("Timer5", Timer5);
 			nbt.putString("TimerName1", TimerName1);
 			nbt.putString("TimerName2", TimerName2);
 			nbt.putString("TimerName3", TimerName3);
@@ -291,6 +276,7 @@ public class DohessModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "dohess_mapvars";
+		public String PlayerColour = "\"\"";
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -302,10 +288,12 @@ public class DohessModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			PlayerColour = nbt.getString("PlayerColour");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putString("PlayerColour", PlayerColour);
 			return nbt;
 		}
 

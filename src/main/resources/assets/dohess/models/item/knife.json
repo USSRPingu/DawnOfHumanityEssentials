@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "dohess:custom/basicknife",
   "textures": {
-    "layer0": "dohess:item/knife"
+    "0": "dohess:block/basicknife",
+    "particle": "dohess:item/knife"
   }
 }

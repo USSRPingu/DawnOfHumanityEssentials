@@ -36,7 +36,7 @@ public class SetBossbarProcedure {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 							("bossbar set minecraft:hp"
 									+ (((commandParameterEntity(arguments, "bossbarname")).getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DohessModVariables.PlayerVariables())).PlayerUser).toLowerCase() + " max "
-									+ new java.text.DecimalFormat("##").format(20)));
+									+ (new java.text.DecimalFormat("##").format((commandParameterEntity(arguments, "bossbarname")) instanceof LivingEntity ? ((LivingEntity) (commandParameterEntity(arguments, "bossbarname"))).getMaxHealth() : -1))));
 			}
 			{
 				Entity _ent = entity;

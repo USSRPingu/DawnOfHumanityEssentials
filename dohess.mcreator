@@ -174,32 +174,6 @@
       "path": "~/Debug"
     },
     {
-      "name": "SetTime",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_time",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetTimeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SetBossbar",
       "type": "procedure",
       "compiles": true,
@@ -985,20 +959,6 @@
       "path": "~/Handcuffs"
     },
     {
-      "name": "Knife",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "knife",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/item/KnifeItem.java",
-          "src/main/resources/assets/dohess/models/item/knife.json"
-        ]
-      },
-      "path": "~/Knife"
-    },
-    {
       "name": "VisableName",
       "type": "procedure",
       "compiles": true,
@@ -1689,26 +1649,70 @@
       "path": "~/Manage Members/Bossbar"
     },
     {
-      "name": "TimerDown",
+      "name": "SelfHarm",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "timer_down",
+      "registry_name": "self_harm",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dohess/procedures/TimerDownProcedure.java"
+          "src/main/java/net/mcreator/dohess/procedures/SelfHarmProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "SetKnifeModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_knife_model",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetKnifeModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "Knife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/KnifeItem.java",
+          "src/main/resources/assets/dohess/models/item/knife.json"
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "Manage",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/ManageCommand.java"
+        ]
+      },
+      "path": "~/Manage Members"
     }
   ],
   "variable_elements": [
@@ -1995,36 +1999,6 @@
       "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
     },
     {
-      "name": "Timer1",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "Timer2",
-      "type": "number",
-      "scope": "world",
-      "value": "0.0"
-    },
-    {
-      "name": "Timer3",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "Timer4",
-      "type": "number",
-      "scope": "world",
-      "value": "0.0"
-    },
-    {
-      "name": "Timer5",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
       "name": "TimerName1",
       "type": "string",
       "scope": "world",
@@ -2053,6 +2027,12 @@
       "type": "string",
       "scope": "world",
       "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
+    },
+    {
+      "name": "PlayerColour",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -2104,6 +2084,8 @@
       "gui.dohess.rank_pick_in_general.label_14": "14",
       "gui.dohess.rank_pick_in_general.label_17": "17",
       "gui.dohess.rank_pick_in_general.label_16": "16",
+      "item.dohess.knife.description_0": "Right-Click \u003d 2 Damage to self",
+      "item.dohess.knife.description_1": "Right-Click \u003d 1 Damage to offhand (Firstaid)",
       "itemGroup.dohess.doh_essentails": "DOH Essentails",
       "gui.dohess.that_players_inventorys.button_a": "A",
       "gui.dohess.rank_pick_sl_edit.five": "sixe",

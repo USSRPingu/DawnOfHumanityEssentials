@@ -43,6 +43,8 @@
   "gui.dohess.rank_pick_in_general.label_14": "14",
   "gui.dohess.rank_pick_in_general.label_17": "17",
   "gui.dohess.rank_pick_in_general.label_16": "16",
+  "item.dohess.knife.description_0": "Right-Click \u003d 2 Damage to self",
+  "item.dohess.knife.description_1": "Right-Click \u003d 1 Damage to offhand (Firstaid)",
   "itemGroup.dohess.doh_essentails": "DOH Essentails",
   "gui.dohess.that_players_inventorys.button_a": "A",
   "gui.dohess.rank_pick_sl_edit.five": "sixe",

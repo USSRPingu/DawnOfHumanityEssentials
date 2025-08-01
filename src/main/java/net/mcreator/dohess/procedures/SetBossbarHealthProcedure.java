@@ -36,5 +36,12 @@ public class SetBossbarHealthProcedure {
 						("bossbar set minecraft:hp" + ((entity.getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DohessModVariables.PlayerVariables())).PlayerUser).toLowerCase() + " value "
 								+ (new java.text.DecimalFormat("##").format(entity instanceof LivingEntity ? ((LivingEntity) entity).getHealth() : -1))));
 		}
+		{
+			Entity _ent = entity;
+			if (!_ent.world.isRemote() && _ent.world.getServer() != null)
+				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+						("bossbar set minecraft:hp" + ((entity.getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DohessModVariables.PlayerVariables())).PlayerUser).toLowerCase() + " max "
+								+ (new java.text.DecimalFormat("##").format(entity instanceof LivingEntity ? ((LivingEntity) entity).getMaxHealth() : -1))));
+		}
 	}
 }

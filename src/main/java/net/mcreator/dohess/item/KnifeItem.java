@@ -1,39 +1,41 @@
 
 package net.mcreator.dohess.item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.dohess.init.DohessModTabs;
+import net.mcreator.dohess.procedures.SelfHarmProcedure;
 
-public class KnifeItem extends SwordItem {
+import java.util.List;
+
+public class KnifeItem extends Item {
 	public KnifeItem() {
-		super(new IItemTier() {
-			public int getMaxUses() {
-				return 0;
-			}
+		super(new Item.Properties().group(null).maxStackSize(1).rarity(Rarity.COMMON));
+	}
 
-			public float getEfficiency() {
-				return 4f;
-			}
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+		super.addInformation(itemstack, world, list, flag);
+		list.add(new TranslationTextComponent("item.dohess.knife.description_0"));
+		list.add(new TranslationTextComponent("item.dohess.knife.description_1"));
+	}
 
-			public float getAttackDamage() {
-				return 1f;
-			}
-
-			public int getHarvestLevel() {
-				return 0;
-			}
-
-			public int getEnchantability() {
-				return 2;
-			}
-
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks();
-			}
-		}, 3, -1f, new Item.Properties().group(DohessModTabs.TAB_DOH_ESSENTAILS));
+	@Override
+	public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
+		ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
+		SelfHarmProcedure.execute(entity);
+		return ar;
 	}
 }
