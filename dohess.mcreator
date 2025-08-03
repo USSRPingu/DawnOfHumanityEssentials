@@ -151,29 +151,6 @@
       }
     },
     {
-      "name": "DisplayPlayername",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "display_playername",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/DisplayPlayernameProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Debug"
-    },
-    {
       "name": "SetBossbar",
       "type": "procedure",
       "compiles": true,
@@ -214,25 +191,6 @@
         ]
       },
       "path": "~/Manage Members/Bossbar"
-    },
-    {
-      "name": "Read",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "read",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/ReadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Debug"
     },
     {
       "name": "CancelMessage",
@@ -316,33 +274,6 @@
       "path": "~/Manage Members/Squad And Rank"
     },
     {
-      "name": "EditSLSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "edit_sl_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/EditSLSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
       "name": "DeleteSLSquad",
       "type": "procedure",
       "compiles": true,
@@ -393,268 +324,6 @@
       "path": "~/Manage Members/Squad And Rank"
     },
     {
-      "name": "SetSquadNameSG",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_squad_name_sg",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetSquadNameSGProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetUserSquadSG",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_user_squad_sg",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetUserSquadSGProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "EditSGSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "edit_sg_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/EditSGSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "DeleteSGSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "delete_sg_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/DeleteSGSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "ListSGSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "list_sg_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/ListSGSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetSquadNameMP",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_squad_name_mp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetSquadNameMPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetUserSquadMP",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_user_squad_mp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetUserSquadMPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "EditmpSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "editmp_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/EditmpSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "DeleteMPSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "delete_mp_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/DeleteMPSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "ListMPSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "list_mp_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/ListMPSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
       "name": "SetRank",
       "type": "procedure",
       "compiles": true,
@@ -663,33 +332,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dohess/procedures/SetRankProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "EditRank",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "edit_rank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/EditRankProcedure.java"
         ],
         "dependencies": [
           {
@@ -746,33 +388,6 @@
           "src/main/java/net/mcreator/dohess/procedures/ListRankProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetUserRank",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_user_rank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetUserRankProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
           {
             "name": "entity",
             "type": "entity"
@@ -982,98 +597,6 @@
       "path": "~/Manage Members"
     },
     {
-      "name": "RemoveRank",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "remove_rank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/RemoveRankProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "RemoveSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "remove_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/RemoveSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetCustomRank",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_custom_rank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetCustomRankProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
-      "name": "SetCustomSquad",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_custom_squad",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dohess/procedures/SetCustomSquadProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Manage Members/Squad And Rank"
-    },
-    {
       "name": "SetCadet",
       "type": "procedure",
       "compiles": true,
@@ -1114,6 +637,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1137,6 +664,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1160,6 +691,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1183,6 +718,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1206,6 +745,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1229,6 +772,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1252,6 +799,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1275,6 +826,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1298,6 +853,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1321,6 +880,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1344,6 +907,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1367,6 +934,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1390,6 +961,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1413,6 +988,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1459,6 +1038,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1713,6 +1296,130 @@
         ]
       },
       "path": "~/Manage Members"
+    },
+    {
+      "name": "Leave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/LeaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EditName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edit_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EditNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/Cmd"
+    },
+    {
+      "name": "PD",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/PDCommand.java"
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "Expiremental",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expiremental",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/ExpirementalCommand.java"
+        ]
+      },
+      "path": "~/Expiremental"
+    },
+    {
+      "name": "SetUserRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_user_rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetUserRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "Rank",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/RankCommand.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/Cmd"
+    },
+    {
+      "name": "Squad",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/SquadCommand.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/Cmd"
     }
   ],
   "variable_elements": [
@@ -1727,54 +1434,6 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
-    },
-    {
-      "name": "MPSquad1",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad2",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad3",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad4",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad5",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad6",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad7",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "MPSquad8",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
     },
     {
       "name": "PD",
@@ -1903,54 +1562,6 @@
       "value": "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]"
     },
     {
-      "name": "SGSquad1",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad2",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad3",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad4",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad5",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad6",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad7",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
-      "name": "SGSquad8",
-      "type": "string",
-      "scope": "world",
-      "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
-    },
-    {
       "name": "SLSquad1",
       "type": "string",
       "scope": "world",
@@ -1999,40 +1610,28 @@
       "value": "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},"
     },
     {
-      "name": "TimerName1",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
-    },
-    {
-      "name": "TimerName2",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
-    },
-    {
-      "name": "TimerName3",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
-    },
-    {
-      "name": "TimerName4",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
-    },
-    {
-      "name": "TimerName5",
-      "type": "string",
-      "scope": "world",
-      "value": "{\"text\":\"No Timer\",\"color\":\"#424242\"}"
-    },
-    {
       "name": "PlayerColour",
       "type": "string",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "PlayerRankP",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "z"
+    },
+    {
+      "name": "PlayerSquadP",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "z"
+    },
+    {
+      "name": "VisableName",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -2157,17 +1756,18 @@
           },
           {
             "name": "Squad And Rank",
-            "children": []
+            "children": [
+              {
+                "name": "Cmd",
+                "children": []
+              }
+            ]
           },
           {
             "name": "NameColour",
             "children": []
           }
         ]
-      },
-      {
-        "name": "Debug",
-        "children": []
       },
       {
         "name": "Dgs",
@@ -2179,6 +1779,10 @@
       },
       {
         "name": "Handcuffs",
+        "children": []
+      },
+      {
+        "name": "Expiremental",
         "children": []
       }
     ]

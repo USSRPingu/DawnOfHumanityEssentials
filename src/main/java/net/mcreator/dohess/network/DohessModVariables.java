@@ -72,6 +72,10 @@ public class DohessModVariables {
 			clone.PlayerRank = original.PlayerRank;
 			clone.PlayerSquad = original.PlayerSquad;
 			clone.PlayerUser = original.PlayerUser;
+			clone.PlayerColour = original.PlayerColour;
+			clone.PlayerRankP = original.PlayerRankP;
+			clone.PlayerSquadP = original.PlayerSquadP;
+			clone.VisableName = original.VisableName;
 			if (!event.isWasDeath()) {
 				clone.handcuffed = original.handcuffed;
 			}
@@ -101,14 +105,6 @@ public class DohessModVariables {
 
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "dohess_worldvars";
-		public String MPSquad1 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad2 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad3 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad4 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad5 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad6 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad7 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String MPSquad8 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public double PD = 0.0;
 		public String Rank1 = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
 		public String Rank10 = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
@@ -126,14 +122,6 @@ public class DohessModVariables {
 		public String Rank7 = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
 		public String Rank8 = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
 		public String Rank9 = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
-		public String SGSquad1 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad2 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad3 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad4 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad5 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad6 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad7 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String SGSquad8 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad1 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad2 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad3 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
@@ -142,11 +130,6 @@ public class DohessModVariables {
 		public String SLSquad6 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad7 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String SLSquad8 = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
-		public String TimerName1 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
-		public String TimerName2 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
-		public String TimerName3 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
-		public String TimerName4 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
-		public String TimerName5 = "{\"text\":\"No Timer\",\"color\":\"#424242\"}";
 
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -158,14 +141,6 @@ public class DohessModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			MPSquad1 = nbt.getString("MPSquad1");
-			MPSquad2 = nbt.getString("MPSquad2");
-			MPSquad3 = nbt.getString("MPSquad3");
-			MPSquad4 = nbt.getString("MPSquad4");
-			MPSquad5 = nbt.getString("MPSquad5");
-			MPSquad6 = nbt.getString("MPSquad6");
-			MPSquad7 = nbt.getString("MPSquad7");
-			MPSquad8 = nbt.getString("MPSquad8");
 			PD = nbt.getDouble("PD");
 			Rank1 = nbt.getString("Rank1");
 			Rank10 = nbt.getString("Rank10");
@@ -183,14 +158,6 @@ public class DohessModVariables {
 			Rank7 = nbt.getString("Rank7");
 			Rank8 = nbt.getString("Rank8");
 			Rank9 = nbt.getString("Rank9");
-			SGSquad1 = nbt.getString("SGSquad1");
-			SGSquad2 = nbt.getString("SGSquad2");
-			SGSquad3 = nbt.getString("SGSquad3");
-			SGSquad4 = nbt.getString("SGSquad4");
-			SGSquad5 = nbt.getString("SGSquad5");
-			SGSquad6 = nbt.getString("SGSquad6");
-			SGSquad7 = nbt.getString("SGSquad7");
-			SGSquad8 = nbt.getString("SGSquad8");
 			SLSquad1 = nbt.getString("SLSquad1");
 			SLSquad2 = nbt.getString("SLSquad2");
 			SLSquad3 = nbt.getString("SLSquad3");
@@ -199,23 +166,10 @@ public class DohessModVariables {
 			SLSquad6 = nbt.getString("SLSquad6");
 			SLSquad7 = nbt.getString("SLSquad7");
 			SLSquad8 = nbt.getString("SLSquad8");
-			TimerName1 = nbt.getString("TimerName1");
-			TimerName2 = nbt.getString("TimerName2");
-			TimerName3 = nbt.getString("TimerName3");
-			TimerName4 = nbt.getString("TimerName4");
-			TimerName5 = nbt.getString("TimerName5");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putString("MPSquad1", MPSquad1);
-			nbt.putString("MPSquad2", MPSquad2);
-			nbt.putString("MPSquad3", MPSquad3);
-			nbt.putString("MPSquad4", MPSquad4);
-			nbt.putString("MPSquad5", MPSquad5);
-			nbt.putString("MPSquad6", MPSquad6);
-			nbt.putString("MPSquad7", MPSquad7);
-			nbt.putString("MPSquad8", MPSquad8);
 			nbt.putDouble("PD", PD);
 			nbt.putString("Rank1", Rank1);
 			nbt.putString("Rank10", Rank10);
@@ -233,14 +187,6 @@ public class DohessModVariables {
 			nbt.putString("Rank7", Rank7);
 			nbt.putString("Rank8", Rank8);
 			nbt.putString("Rank9", Rank9);
-			nbt.putString("SGSquad1", SGSquad1);
-			nbt.putString("SGSquad2", SGSquad2);
-			nbt.putString("SGSquad3", SGSquad3);
-			nbt.putString("SGSquad4", SGSquad4);
-			nbt.putString("SGSquad5", SGSquad5);
-			nbt.putString("SGSquad6", SGSquad6);
-			nbt.putString("SGSquad7", SGSquad7);
-			nbt.putString("SGSquad8", SGSquad8);
 			nbt.putString("SLSquad1", SLSquad1);
 			nbt.putString("SLSquad2", SLSquad2);
 			nbt.putString("SLSquad3", SLSquad3);
@@ -249,11 +195,6 @@ public class DohessModVariables {
 			nbt.putString("SLSquad6", SLSquad6);
 			nbt.putString("SLSquad7", SLSquad7);
 			nbt.putString("SLSquad8", SLSquad8);
-			nbt.putString("TimerName1", TimerName1);
-			nbt.putString("TimerName2", TimerName2);
-			nbt.putString("TimerName3", TimerName3);
-			nbt.putString("TimerName4", TimerName4);
-			nbt.putString("TimerName5", TimerName5);
 			return nbt;
 		}
 
@@ -276,7 +217,6 @@ public class DohessModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "dohess_mapvars";
-		public String PlayerColour = "\"\"";
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -288,12 +228,10 @@ public class DohessModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			PlayerColour = nbt.getString("PlayerColour");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putString("PlayerColour", PlayerColour);
 			return nbt;
 		}
 
@@ -395,6 +333,10 @@ public class DohessModVariables {
 			nbt.putString("PlayerRank", instance.PlayerRank);
 			nbt.putString("PlayerSquad", instance.PlayerSquad);
 			nbt.putString("PlayerUser", instance.PlayerUser);
+			nbt.putString("PlayerColour", instance.PlayerColour);
+			nbt.putString("PlayerRankP", instance.PlayerRankP);
+			nbt.putString("PlayerSquadP", instance.PlayerSquadP);
+			nbt.putBoolean("VisableName", instance.VisableName);
 			return nbt;
 		}
 
@@ -407,6 +349,10 @@ public class DohessModVariables {
 			instance.PlayerRank = nbt.getString("PlayerRank");
 			instance.PlayerSquad = nbt.getString("PlayerSquad");
 			instance.PlayerUser = nbt.getString("PlayerUser");
+			instance.PlayerColour = nbt.getString("PlayerColour");
+			instance.PlayerRankP = nbt.getString("PlayerRankP");
+			instance.PlayerSquadP = nbt.getString("PlayerSquadP");
+			instance.VisableName = nbt.getBoolean("VisableName");
 		}
 	}
 
@@ -417,6 +363,10 @@ public class DohessModVariables {
 		public String PlayerRank = "{\"text\":\"No Rank. \",\"color\":\"#424242\"}]";
 		public String PlayerSquad = "[{\"text\":\"[\",\"color\":\"#636363\"},{\"text\":\"No Squad\",\"color\":\"#424242\"},{\"text\":\"] | \",\"color\":\"#636363\"},";
 		public String PlayerUser = "";
+		public String PlayerColour = "\"\"";
+		public String PlayerRankP = "z";
+		public String PlayerSquadP = "z";
+		public boolean VisableName = true;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -451,6 +401,10 @@ public class DohessModVariables {
 					variables.PlayerRank = message.data.PlayerRank;
 					variables.PlayerSquad = message.data.PlayerSquad;
 					variables.PlayerUser = message.data.PlayerUser;
+					variables.PlayerColour = message.data.PlayerColour;
+					variables.PlayerRankP = message.data.PlayerRankP;
+					variables.PlayerSquadP = message.data.PlayerSquadP;
+					variables.VisableName = message.data.VisableName;
 				}
 			});
 			context.setPacketHandled(true);

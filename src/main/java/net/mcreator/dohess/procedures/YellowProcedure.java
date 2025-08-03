@@ -17,7 +17,14 @@ public class YellowProcedure {
 			Entity _ent = entity;
 			if (!_ent.world.isRemote() && _ent.world.getServer() != null)
 				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), ("team modify "
-						+ (((commandParameterEntity(arguments, "colourname")).getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DohessModVariables.PlayerVariables())).PlayerUser).toLowerCase() + " color yellow"));
+						+ (((commandParameterEntity(arguments, "username")).getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DohessModVariables.PlayerVariables())).PlayerUser).toLowerCase() + " color yellow"));
+		}
+		{
+			String _setval = "yellow";
+			(commandParameterEntity(arguments, "colourname")).getCapability(DohessModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.PlayerColour = _setval;
+				capability.syncPlayerVariables((commandParameterEntity(arguments, "colourname")));
+			});
 		}
 	}
 
